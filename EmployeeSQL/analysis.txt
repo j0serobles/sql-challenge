@@ -1,0 +1,57 @@
+1) List the following details of each employee: employee number, last name, first name, sex, and salary.
+
+select e.emp_no, e.last_name, e.first_name, e.sex, s.salary 
+from public."Employees" e, 
+     public."Salaries" s
+where e.emp_no  = s.emp_no; 
+
+
+
+2) List first name, last name, and hire date for employees who were hired in 1986.
+select first_name, last_name, hire_date
+from public."Employees"
+where hire_date between '1986-01-01' and '1986-12-31'
+order by hire_date asc;
+
+
+3) List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+
+select d.dept_no "Department Number", 
+d.dept_name "Department Name", 
+m.emp_no "Manager Employee Number",
+e.last_name "Manager Last Name", 
+e.first_name "Manager First Name"
+from public."Employees" e, public."Departments" d, public."Dept_Manager" m
+where e.emp_no = m.emp_no
+and d.dept_no = m.dept_no;
+
+
+4)List the department of each employee with the following information: employee number, last name, first name, and department name.
+select 
+m.emp_no "Employee Number",
+e.last_name "Last Name", 
+e.first_name "First Name",
+d.dept_name "Department Name"
+from public."Employees" e, public."Departments" d, public."Dept_Emp" m
+where e.emp_no = m.emp_no
+and d.dept_no = m.dept_no;
+
+
+5) List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+select 
+e.first_name "First Name", 
+e.last_name "Last Name", 
+e.sex
+from public."Employees" e
+where e.first_name = 'Hercules'
+and last_name like 'B%';
+
+
+6) List all employees in the Sales department, including their employee number, last name, first name, and department name.
+
+
+
+
+List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+
+In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
