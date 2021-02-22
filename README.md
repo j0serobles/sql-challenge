@@ -98,3 +98,25 @@ group by last_name
 order by 2 desc;
 ```
 ![query8](./EmployeeSQL/images/analysis_fig8.PNG)
+
+
+## Bonus
+
+Import the SQL database into Pandas, and create a histogram to visualize the most common salary ranges for employees.  Also, create a bar chart of average salary by title.
+
+
+<a href="Salary_Analysis.html" target="_blank">Access the Jupyter Notebook for the Bonus tasks.</a>
+
+## Files:
+
+### ERD Image File
+
+![ERD Image](./EmployeeSQL/images/QuickDBD-UCF_DATA_BC_HW7_ERD_FROM_QUICK_DB.png)
+
+### Schema SQL File
+
+<a href="./EmployeeSQL/schema.sql" target="_blank">Schema SQL File (Text)</a>
+
+### SQL Queries File
+
+<a href="./EmployeeSQL/queries.sql" target="_blank">Queries SQL File (Text)</a>
