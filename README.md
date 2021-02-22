@@ -105,7 +105,7 @@ order by 2 desc;
 Import the SQL database into Pandas, and create a histogram to visualize the most common salary ranges for employees.  Also, create a bar chart of average salary by title.
 
 
-<a href="Salary_Analysis.html" target="_blank">Access the Jupyter Notebook for the Bonus tasks.</a>
+[Jupyter Notebook File](./EmployeeSQL/Salary_Analysis.ipynb)
 
 ## Files:
 
